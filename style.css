@@ -17,7 +17,7 @@ a {
   width: 100%;
   display: flex;
   justify-content: end;
-  padding: .5em;
+  padding: .5em 0;
   background-color: #005172;
   z-index: 3;
   font-size: 20px;
@@ -67,7 +67,7 @@ nav > a:hover::after {
 
 #bg-image {
   height: 105vh;
-  background-image: url("https://s3.envato.com/files/3c53ef5b-f3d4-49e0-82bd-376915ff94b6/inline_image_preview.jpg");
+  background-image: url("Images/Welcome_Background_Img.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -135,14 +135,9 @@ h2 {
   text-align: center;
 }
 
-.profile-link > img {
-  height: 30px;
-  margin: 20px;
-}
-
-.twitter-link > img {
-  height: 37px;
-  margin-bottom: 18px;
+#profile-text > p {
+  font-size: 20px;
+  line-height: 1.5;
 }
 
 @media (max-width: 767px) {
@@ -175,7 +170,7 @@ h2 {
 }
 
 #project-links img {
-  height: 300px;
+  height: 325px;
   width: 100%;
   object-fit: cover;
   border-radius: 1%;
@@ -191,6 +186,25 @@ h2 {
   #project-links {
     grid-template-columns: 1fr;
   }
+}
+
+#contact {
+  border: 2px solid #005172;
+  border-radius: 1%;
+  width: 80%;
+  margin: 2em auto;
+  padding: 0 1em 1em 1em;
+  text-align: center;
+}
+
+.profile-link > img {
+  height: 30px;
+  margin: 20px;
+}
+
+.twitter-link > img {
+  height: 37px;
+  margin-bottom: 18px;
 }
 
 footer {
