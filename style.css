@@ -191,7 +191,7 @@ h2 {
 #contact {
   border: 2px solid #005172;
   border-radius: 1%;
-  width: 80%;
+  width: 40%;
   margin: 2em auto;
   padding: 0 1em 1em 1em;
   text-align: center;
@@ -200,11 +200,6 @@ h2 {
 .profile-link > img {
   height: 30px;
   margin: 20px;
-}
-
-.twitter-link > img {
-  height: 37px;
-  margin-bottom: 18px;
 }
 
 footer {
