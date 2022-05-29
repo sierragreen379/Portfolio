@@ -44,7 +44,7 @@ nav > a:after {
   left: 0;
   background-color: #F7F8FF;
   transform-origin: bottom right;
-  transition: transform .25s ease-out;
+  transition: transform .25s ease-in-out;
 }
 
 nav > a:hover::after {
@@ -52,12 +52,13 @@ nav > a:hover::after {
   transform-origin: bottom left;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 700px) {
   #navbar {
-    justify-content: space-around;
+    display: block;
+    /* justify-content: space-around; */
   }
   nav > a {
-    margin: 0;
+    margin: 0.5rem;
   }
 }
 
@@ -171,6 +172,32 @@ h2 {
   border: 2px solid #005172;
   border-radius: 10px;
   padding: .2em;
+  transition: transform .3s;
+}
+
+.project-tile > a {
+  transition: color .5s;
+  -webkit-transition: color .5s;
+  -moz-transition: color .5s;
+  -o-transition: color .5s;
+}
+
+.project-tile > a:hover {
+  color: #3097c0;
+}
+
+.project-tile > a > img {
+  transition: transform .5s;
+  -webkit-transition: transform .5s;
+  -moz-transition: transform .5s;
+  -o-transition: transform .5s;
+}
+
+.project-tile > a > img:hover {
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -o-transform: scale(1.05);
 }
 
 @media (max-width: 830px) {
@@ -194,7 +221,7 @@ h2 {
   margin: -1rem auto 2rem;
 }
 
-#contact-form {
+/* #contact-form {
   width: 80%;
   margin: auto;
   display: grid;
@@ -258,6 +285,23 @@ h2 {
 #send-message:hover {
   background-color: #10759e;
 }
+
+@media (max-width: 1024px) {
+  #send-message {
+    width: 50%;
+  }
+}
+
+@media (max-width: 750px) {
+  #contact-form {
+    grid-template-columns: auto;
+    grid-template-areas: 
+      "name"
+      "email"
+      "message"
+      "send";
+  }
+} */
 
 .social-link {
   display: inline-block;
