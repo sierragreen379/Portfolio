@@ -259,9 +259,24 @@ h2 {
   background-color: #10759e;
 }
 
-.profile-link > img {
+.social-link {
+  display: inline-block;
+  transition: transform .3s;
+  -webkit-transition: transform .3s;
+  -moz-transition: transform .3s;
+  -o-transition: transform .3s;
+}
+
+.social-link > img {
   height: 50px;
   margin: 20px;
+}
+
+.social-link:hover {
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
 }
 
 footer {
