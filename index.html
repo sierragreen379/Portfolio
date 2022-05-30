@@ -5,8 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sierra Green - Portfolio</title>
     <link rel="stylesheet" href="CSS/style.css"></link>
+    <script>
+    function toggleMenu() {
+      const navbar = document.getElementById("navbar");
+      const menuButton = document.getElementById("burger-button");
+      if (navbar.classList.contains("drawer-open")) {
+        navbar.classList.remove("drawer-open");
+        menuButton.classList.remove("position-fixed");
+      } else {
+        navbar.classList.add("drawer-open");
+        menuButton.classList.add("position-fixed");
+      }
+    }
+  </script>
   </head>
   <body>
+    <button id="burger-button" onclick="toggleMenu()"></button>
     <nav id="navbar">
       <a href="#welcome-section">Home</a>
       <a href="#profile">About Me</a>
