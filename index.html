@@ -6,21 +6,25 @@
     <title>Sierra Green - Portfolio</title>
     <link rel="stylesheet" href="CSS/style.css"></link>
     <script>
-    function toggleMenu() {
-      const navbar = document.getElementById("navbar");
-      const menuButton = document.getElementById("burger-button");
-      if (navbar.classList.contains("drawer-open")) {
-        navbar.classList.remove("drawer-open");
-        menuButton.classList.remove("position-fixed");
-      } else {
-        navbar.classList.add("drawer-open");
-        menuButton.classList.add("position-fixed");
+      function toggleMenu() {
+        const navbar = document.getElementById("navbar");
+        const menuButton = document.getElementById("burger-button");
+        if (navbar.classList.contains("drawer-open")) {
+          navbar.classList.remove("drawer-open");
+          // our burger button will stay at the top op the page while scriling
+          menuButton.classList.add("position-absolute");
+          menuButton.classList.remove("position-fixed");
+        } else {
+          navbar.classList.add("drawer-open");
+          // we want that the burger button moves along while scrolling
+          menuButton.classList.add("position-fixed");
+          menuButton.classList.remove("position-absolute");
+        }
       }
-    }
-  </script>
+    </script>
   </head>
   <body>
-    <button id="burger-button" onclick="toggleMenu()"></button>
+    <button id="burger-button" class="position-absolute" onclick="toggleMenu()"></button>
     <nav id="navbar">
       <a href="#welcome-section">Home</a>
       <a href="#profile">About Me</a>
