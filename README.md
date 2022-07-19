@@ -4,4 +4,4 @@ A collection of my projects, some information about me, and how you can contact 
 
 [See this code in action!](https://sierragreen379.github.io/Portfolio/)
 
-![Portfolio Preview](./Images/Portfolio_Image.png)
+![Portfolio Preview](./Images/Portfolio_Img.png)
