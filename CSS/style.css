@@ -88,6 +88,9 @@ html {
 }
 
 @media (max-width: 610px) {
+  #header-logo {
+    margin-left: 1rem;
+  }
   .hamburger {
     display: block;
     float: right;
@@ -330,5 +333,8 @@ footer > img {
 @media (max-width: 610px) {
   footer {
     padding-right: 1rem;
+  }
+  footer > img {
+    margin-left: 1rem;
   }
 }
